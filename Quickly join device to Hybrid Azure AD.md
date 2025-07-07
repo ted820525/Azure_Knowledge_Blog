@@ -6,7 +6,7 @@ Type the command **dsregcmd /status** in a Command Prompt
 
 
 The following pictures is not have join Hybrid Azure AD
-
+```
 +----------------------------------------------------------------------+
 | Device State                                                         |
 +----------------------------------------------------------------------+
@@ -15,6 +15,7 @@ The following pictures is not have join Hybrid Azure AD
               DomainJoined : YES
                 DomainName : HYBRIDADFS
 +----------------------------------------------------------------------+
+```
 
 ### Device Status
 
@@ -54,7 +55,7 @@ Follow this procedure:
 
  ### Step 3: Wait a moment enter dsregcmd /status .Will  display 'Joined'.
 
-
+```
 +----------------------------------------------------------------------+
 | Device State                                                         |
 +----------------------------------------------------------------------+
@@ -63,7 +64,7 @@ Follow this procedure:
               DomainJoined : YES  
                 DomainName : HYBRIDADFS
 +----------------------------------------------------------------------+
-
+```
 
 
 **This is  Quickly join device to Hybrid Azure AD method！**
