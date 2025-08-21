@@ -1,11 +1,11 @@
-### Quickly join device to Hybrid Azure AD 
+### デバイスを迅速にハイブリッド Azure AD に参加させる 
 
-### Step 1: First check Azure AD  status 
+### 手順1：まず Azure AD の状態を確認する 
 
-Type the command **dsregcmd /status** in a Command Prompt
+コマンド プロンプトで次のコマンドを入力します：
+dsregcmd /status
 
-
-The following pictures is not have join Hybrid Azure AD
+以下の図は、ハイブリッド Azure AD に参加していない状態を示しています。
 ```
 +----------------------------------------------------------------------+
 | Device State                                                         |
@@ -17,7 +17,7 @@ The following pictures is not have join Hybrid Azure AD
 +----------------------------------------------------------------------+
 ```
 
-### Device Status
+### デバイスの状態
 
 AzureAdJoined | EnterpriseJoined | DomainJoined | Device Status
 -- | -- | -- | --
@@ -26,23 +26,22 @@ No | No | yes | Domain joined
 yes | No | yes | Microsoft Entra hybrid join completed
 No | yes | yes | A local DRS connection has been established
 
-AzureAdJoined : If the device has joined Microsoft Entra ID, set the status to "Yes" . Otherwise, set the status to NO .
+AzureAdJoined ：デバイスが Microsoft Entra ID に参加している場合、状態は「Yes」に設定します。それ以外の場合は「No」とします。
 
-EnterpriseJoined : If the device is joined to an on-premises Active Directory (AD), set the status to Yes. A device cannot be both EnterpriseJoined and AzureAdJoined at the same time.
+EnterpriseJoined ：デバイスがオンプレミスの Active Directory (AD) に参加している場合、状態は「Yes」に設定します。デバイスは同時に EnterpriseJoined と AzureAdJoined になることはできません。
 
-DomainJoined : If the device is joined to a domain (Active Directory), set the status to [Yes] .
+DomainJoined ：デバイスがドメイン (Active Directory) に参加している場合、状態は「Yes」に設定します。
 
-DomainName : If the device is joined to a domain, set the status to the domain name.
+DomainName ：デバイスがドメインに参加している場合、状態はドメイン名を設定します。
 
 
+### 手順2：タスクスケジューラを使用して、デバイスをハイブリッド Azure AD に再登録します。
 
-### Step 2: Use   Task Scheduler Re-register the device as a Hybrid Azure AD Join
-
-Follow this procedure:
+以下の手順に従ってください:
 
  
 
-- Open Task Scheduler Run as an administrator.
+- タスクスケジューラを管理者として実行します。
 
 
 <img width="164" alt="task-scheduler" src="https://github.com/user-attachments/assets/91b7740e-2d2d-4a0e-bbdd-c0422617fa41" />
@@ -53,7 +52,7 @@ Follow this procedure:
 
 - Type the command **dsregcmd /leave**  and **dsregcmd /join**  the device will rejoin again. 
 
- ### Step 3: Wait a moment enter dsregcmd /status .Will  display 'Joined'.
+ ### 手順3：しばらく待ってから dsregcmd /status を入力します。実行すると、状態が 「Joined」 と表示されます。
 
 ```
 +----------------------------------------------------------------------+
@@ -67,4 +66,4 @@ Follow this procedure:
 ```
 
 
-**This is  Quickly join device to Hybrid Azure AD method！**
+**これは、デバイスを迅速にハイブリッド Azure AD に参加させる方法です！**
