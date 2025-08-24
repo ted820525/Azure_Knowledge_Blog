@@ -1,4 +1,4 @@
-# Set Invite external user 
+# Using Groups to Organize and Manage Entra Licenses
 Using Groups to Organize and Manage Entra Licenses
 
 In large companies, resources are generally managed through organizations.
