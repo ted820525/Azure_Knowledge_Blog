@@ -24,8 +24,10 @@ The following is the usage guide.
 
  ### Step 6,Enter to Microsoft 365 Business Premium,Select Group > Assign License   >Choose the needed Group
    <img width="997" height="571" alt="截圖 2025-08-24 下午1 11 00" src="https://github.com/user-attachments/assets/e6c78e97-f83c-4377-a33b-45a20f60506a" />
-<img width="1001" height="566" alt="截圖 2025-08-24 下午1 11 26" src="https://github.com/user-attachments/assets/ecee0b57-615a-4646-92f3-ab9acd7bd138" />
+ 
+ <img width="978" height="636" alt="截圖 2025-08-24 下午4 25 59" src="https://github.com/user-attachments/assets/077d896b-a45b-4692-9b99-3199964f7903" />
 
  ### Step 7,The group is shown in the figure below. JP_Microsoft365 ,Click Select 。Manage apps& services  The services provided by the license can be managed.   
- <img width="1086" height="693" alt="截圖 2025-08-24 下午1 14 58" src="https://github.com/user-attachments/assets/f5f7ba2b-52fe-4c83-8e81-61d83e6f9a49" />
+<img width="1006" height="664" alt="截圖 2025-08-24 下午4 26 32" src="https://github.com/user-attachments/assets/c292afa0-0925-40ab-9cea-8a60c3d93d6d" />
+
  ## This is Using Groups to Organize and Manage Entra Licenses！
